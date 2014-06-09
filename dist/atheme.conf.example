@@ -155,6 +155,7 @@ loadmodule "modules/crypto/posix";
  * installed on your system in order to use.
  *
  * Core components                              modules/nickserv/main
+ * SET command core                             modules/nickserv/set_core
  * Nickname access lists                        modules/nickserv/access
  * Bad email address blocking                   modules/nickserv/badmail
  * CertFP fingerprint managment                 modules/nickserv/cert
@@ -184,7 +185,6 @@ loadmodule "modules/crypto/posix";
  * Password return (RETURN command)             modules/nickserv/return
  * Password retrieval (SENDPASS command)        modules/nickserv/sendpass
  * Password retrieval allowed to normal users   modules/nickserv/sendpass_user
- * SET command core                             modules/nickserv/set_core
  * Change primary nickname (SET ACCOUNTNAME)    modules/nickserv/set_accountname
  * SET EMAIL command                            modules/nickserv/set_email
  * SET EMAILMEMOS command                       modules/nickserv/set_emailmemos
@@ -209,6 +209,7 @@ loadmodule "modules/crypto/posix";
  * VHOST command                                modules/nickserv/vhost
  */
 loadmodule "modules/nickserv/main";
+loadmodule "modules/nickserv/set_core";
 #loadmodule "modules/nickserv/access";
 loadmodule "modules/nickserv/badmail";
 #loadmodule "modules/nickserv/cert";
@@ -239,7 +240,6 @@ loadmodule "modules/nickserv/return";
 loadmodule "modules/nickserv/setpass";
 #loadmodule "modules/nickserv/sendpass";
 loadmodule "modules/nickserv/sendpass_user";
-loadmodule "modules/nickserv/set_core";
 loadmodule "modules/nickserv/set_accountname";
 loadmodule "modules/nickserv/set_email";
 loadmodule "modules/nickserv/set_emailmemos";
